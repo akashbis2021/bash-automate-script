@@ -5,5 +5,5 @@ then
     echo "SERVER IS CONNECTING........."
     clear
     echo "WELCOME SIR"
-    ssh server@192.168.1.105
+    ssh server@198.***.*.***
 fi
