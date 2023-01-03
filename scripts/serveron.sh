@@ -1,8 +1,12 @@
 #!/bin/bash
 read -p "Which server you want to 'ON':" serveron
 
-if [ $serveron == "linuxserver" ]
+if [ $serveron == "ubuntuserver" ]
 then
     echo "ON LINUXSERVER SUCCESSFULL"
-    virtualbox /mnt/hdd/os_dumy/server/server.vbox
+    virtualbox <Enter path>/<servername>.vbox
+elif [ $serveron == "redhatserver" ]
+then
+    echo "ON LINUXSERVER SUCCESSFULL"
+    virtualbox <Enter path>/<servername>.vbox
 fi
