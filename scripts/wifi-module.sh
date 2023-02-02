@@ -5,10 +5,9 @@ echo "Wifi-Module-Option:"
 echo "1. Wifi-Info"
 echo "2. Set-Wifi-Module"
 echo "3. Wifi-Scan-Networks"
-echo "4. Wifi-Connect"
-echo "5. Wifi-Disconnect"
-echo "6. Wifi-turn(On/Off)" 
-echo "7. Quit"
+echo "4. Wifi-Connect(ESSID)"
+echo "5. Wifi-turn(On/Off)" 
+echo "6. Quit"
 echo " "
 read -p "Enter Option:" choice
 
@@ -43,11 +42,6 @@ do
     echo " ";;
 
   5)clear
-    echo "Wifi-Disconnect..."
-    nmcli d disconnect $wifimodel
-    echo " ";;
-
-  6)clear
     read -p "Wifi-Module(On/Off):" switch
     if [ $switch == "on" ]
     then
@@ -62,7 +56,7 @@ do
     fi
     echo " ";;
 
-  7)clear
+  6)clear
     echo "Quit-module"
     echo " "
     exit;;
@@ -77,10 +71,9 @@ echo "Wifi-Module-Option:"
 echo "1. Wifi-Info"
 echo "2. Set-Wifi-Module"
 echo "3. Wifi-Scan-Networks"
-echo "4. Wifi-Connect"
-echo "5. Wifi-Disconnect"
-echo "6. Wifi-turn(On/Off)" 
-echo "7. Quit"
+echo "4. Wifi-Connect(ESSID)"
+echo "5. Wifi-turn(On/Off)" 
+echo "6. Quit"
 echo " "
 read -p "Enter Option:" choice
 
