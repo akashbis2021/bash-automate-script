@@ -80,7 +80,7 @@ echo "2. Set-Wifi-Module"
 echo "3. Wifi-Scan-Networks"
 echo "4. Wifi-Connect(ESSID)"
 echo "5. Wifi-turn(On/Off)" 
-echo "7. Forget-Network"
+echo "6. Forget-Network"
 echo "7. Quit"
 echo " "
 read -p "Enter Option:" choice
