@@ -7,7 +7,8 @@ echo "2. Set-Wifi-Module"
 echo "3. Wifi-Scan-Networks"
 echo "4. Wifi-Connect(ESSID)"
 echo "5. Wifi-turn(On/Off)" 
-echo "6. Quit"
+echo "6. Forget-Netwrk"
+echo "7. Quit"
 echo " "
 read -p "Enter Option:" choice
 
@@ -55,8 +56,14 @@ do
        echo "Wifi is Disconnect.. .."
     fi
     echo " ";;
-
   6)clear
+    echo "Enter ESSID:" forgetessid
+    sudo nmcli c delete $forgetessid
+    clear
+    echo "ESSID forget successfully.."
+    echo " ";;
+  
+  7)clear
     echo "Quit-module"
     echo " "
     exit;;
@@ -73,7 +80,8 @@ echo "2. Set-Wifi-Module"
 echo "3. Wifi-Scan-Networks"
 echo "4. Wifi-Connect(ESSID)"
 echo "5. Wifi-turn(On/Off)" 
-echo "6. Quit"
+echo "7. Forget-Network"
+echo "7. Quit"
 echo " "
 read -p "Enter Option:" choice
 
